@@ -26,14 +26,18 @@ main {
     margin-top: 8%;
     background-color: rgb(72, 71, 71);
     box-shadow: rgb(184, 127, 237) 0px 5px 15px;
+    animation: slideIn 1.5s ease-in-out, floating 3s
+    ease-in-out infinite;
 }
 
 main img {
-    width: 100px;
-    border-radius: 30px;
-    margin-top: 20px;
-    border: 2px solid rgb(111, 23, 193);
-}
+        width: 130px;
+        height: 150px; 
+        border-radius: 50%; 
+        margin-top: 20px;
+        border: 2px solid rgb(111, 23, 193);
+    }
+    
 
 .text-pessoa {
     display: flex;
@@ -97,5 +101,26 @@ footer h4 {
     font-size: 15px;
     font-weight: bold;
     margin-top: 15px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animação floating */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
