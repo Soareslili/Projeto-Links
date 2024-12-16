@@ -30,9 +30,9 @@ main {
 }
 
 main img {
-        width: 130px;
-        height: 150px; 
-        border-radius: 50%; 
+        width: 150px;
+        height: 300px; 
+        border-radius: 50%;
         margin-top: 20px;
         border: 2px solid rgb(111, 23, 193);
     }
